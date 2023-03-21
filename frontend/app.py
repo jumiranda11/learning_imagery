@@ -1,5 +1,5 @@
 import streamlit as st
-
+import imgkit
 from io import StringIO
 
 from PIL import Image
