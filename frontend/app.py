@@ -1,5 +1,7 @@
 import streamlit as st
 import imgkit
+import requests
+
 from io import StringIO
 
 from PIL import Image
