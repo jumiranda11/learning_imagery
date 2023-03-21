@@ -3,7 +3,7 @@ from fastapi import FastAPI, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
 from starlette.responses import Response
 
-from penguin_rec.penguin_rec import annotate_img
+from backend.penguin_rec.penguin_rec import annotate_img
 
 import numpy as np
 import io
