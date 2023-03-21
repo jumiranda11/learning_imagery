@@ -52,10 +52,11 @@ if img_file_buffer is not None:
   with col2:
     with st.spinner("Wait for it..."):
       ### Get bytes from the file buffer
-      img_bytes = img_file_buffer.getvalue()
+      #img_bytes = img_file_buffer.getvalue()
 
       ### Make request to  API (stream=True to stream response as bytes)
-      res = requests.post(url + "/upload_image", files={'img': img_bytes})
+      res = requests.post(url + "/upload_image", files=img_file_buffer)
+                          #={'img': img_bytes})
 
       if res.status_code == 200:
         ### Display the image returned by the API
